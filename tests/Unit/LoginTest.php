@@ -1,19 +1,26 @@
 <?php
-
-namespace Tests\Unit;
+require_once 'application/view/home/loginA.php';
 
 use PHPUnit\Framework\TestCase;
 
-
-class ExampleTest extends TestCase
+class LoginTest extends TestCase
 {
+
     /**
-     * A basic test example.
-     *
-     * @return void
+     * Creates the application.
+     * 
+     * @return \Illuminate\Foundation\Application
      */
-    public function testBasicTest()
+
+    public function login()
     {
-        $this->assertTrue(true);
+
+        $this->type('id', '1007311489');
+        $this->type('clave', '1567');
+        $this->press('btni');
+        $this->assertAuthenticated();
+
     }
 }
+
+?>
