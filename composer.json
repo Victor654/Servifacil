@@ -1,28 +1,11 @@
 {
-    "name": "panique/mini3",
-    "description": "MINI3 - an extremely simple naked PHP application",
-    "type": "project",
-    "license": "MIT",
+    "name": "vendor/mini3",
+    "description": "Description of project mini3.",
     "authors": [
         {
-            "name": "Panique",
-            "email": "panique@firemail.de"
-        },
-        {
-            "name": "John Dias",
-            "email": "joaodias@noctus.org"
+            "name": "Usuario",
+            "email": "your@email.here"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload":
-    {
-        "psr-4":
-        {
-            "Mini\\" : "application/"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "8"
-    }
+    "require": {}
 }
