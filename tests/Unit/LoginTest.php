@@ -1,6 +1,6 @@
 <?php
 
-require_once 'application/view/Home/LoginA.php';
+require_once 'application/Controller/HomeController.php';
 
 
 use PHPUnit\Framework\TestCase;
@@ -13,11 +13,11 @@ class LoginTest extends TestCase
      * @return void
      */
     
-    public function testBasicTest()
+    public function LoginCorrecto()
     {
-        $this->type('id','1007311489');
-        $this->type('password','1567');
-        $this->press('btni');
+        $this->assertSame(1007311489, Login($userForm));
+        $this->assertSame(1567, Login($passForm));
+        $this->asseTrue(True);
 
     }
 }

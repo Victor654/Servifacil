@@ -82,7 +82,7 @@ if(isset($_SESSION['user'])){
 
     $user = new User();
     if($user->userExists($userForm, $passForm)){
-        //echo "Existe el usuario";
+        echo "Existe el usuario";
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
