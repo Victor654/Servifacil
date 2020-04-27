@@ -1,23 +1,18 @@
 <?php
 
-require_once 'application/Controller/HomeController.php';
+require_once 'application/Model/user.php';
 
 
 use PHPUnit\Framework\TestCase;
 
 class LoginTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    
     public function LoginCorrecto()
     {
-        $this->assertSame(1007311489, Login($userForm));
-        $this->assertSame(1567, Login($passForm));
-        $this->asseTrue(True);
+        $user = new application/Model/user.php;
+        $this->assertEquals(1007311489, userExists());
+        $this->assertEquals(1567, userExists());
+        $this->asseTrue(true);
 
     }
 }
