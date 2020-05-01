@@ -1,7 +1,7 @@
 <br><br><br><br><br> <br><br>
 <div class="container">
   <div class="row" style="padding-left: 250px">
-    <div class="input-field col s12 blue center-align" >
+    <div class="input-field col s12 center-align">
     <br><br>
     <h1>Buscar por Operario</h1>
     <div class="input-field col s12">

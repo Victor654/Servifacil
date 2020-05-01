@@ -37,7 +37,4 @@ while ($row = mysqli_fetch_assoc($consulta)) {
     $pdf->Ln();
  }
   $pdf->Output();
-
-
- 
  ?>
