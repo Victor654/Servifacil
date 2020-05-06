@@ -1,5 +1,5 @@
 <div class="container">    
-  <h3 class="blue-text" style="padding-left: 300px">Asignar Tareas</h3>
+  <h3 class="black-text" style="padding-left: 300px">Asignar Tareas</h3>
     <div class="container" style="padding-left: 100px">
     <form class="col s12" method="post" action="<?php echo URL; ?>admin/addtarea" autocomplete="off">
 
@@ -35,7 +35,7 @@
             </button>
          </div>
          <div class="input-field col s8">
-          <table id="detalle3">
+          <table id="detalle3" required>
             <thead>
               <tr>
                 <th>Orden de producción</th>
