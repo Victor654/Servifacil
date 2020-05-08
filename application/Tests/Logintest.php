@@ -1,7 +1,8 @@
 <?php
-//namespace Mini\Model;
+//namespace Mini\Tests;
+use Mini\Model\user;
 use PHPUnit\Framework\TestCase;
-require_once('Model\user.php');
+require_once('application\Model\user.php');
 //use user;
 class Logintest extends TestCase
 {
