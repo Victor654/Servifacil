@@ -1,9 +1,9 @@
 <?php
-namespace Mini\Model;
+//namespace Mini\Model;
 use PHPUnit\Framework\TestCase;
-require_once('user.php');
+require_once('Model\user.php');
 //use user;
-class MyFirstTest extends TestCase
+class Logintest extends TestCase
 {
     public function testUserConection()
     {
