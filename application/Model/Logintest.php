@@ -1,32 +1,27 @@
 <?php
-//namespace Mini\Model;
-//use Mini\Core\Model;
-//use Mini\Model\user;
-require_once 'application\Model\user.php';
-//use user;
+namespace Mini\Model;
 use PHPUnit\Framework\TestCase;
-
-class LoginTest extends TestCase
+require_once('user.php');
+//use user;
+class MyFirstTest extends TestCase
 {
-    
-    /** @test */
-    public function testLogin()
+    public function testUserConection()
     {
-        $userForm = $_POST['id'];
-        $passForm = $_POST['clave'];
-    
-        $user = new User();
-        if($user->userExists($userForm, $passForm)){
-            $userSession->setCurrentUser($userForm);
-            $user->setUser($userForm);
-
-        }
-        $this->assertSame(true,$user -> userExists(1007311489, 1567));
-        //(1007311489,$user -> userExists());
-        $this->assertSame(1567,$user -> userExists());
-        $this->assertTrue(true);
-
+       // $userForm = 1007311489;
+        //$passForm = 1567;
+        $subject = user::userExists(1007311489,1567);
+        $this->assertEquals(true,$subject);
     }
-}
 
+    public function testHelloWorld()
+    {
+        $this->assertEquals("hello world", "hello world");
+    }
+
+    public function testHelloWorld2()
+    {
+        $this->assertEquals("hello world", "hello world");
+    }
+
+}
 ?>
