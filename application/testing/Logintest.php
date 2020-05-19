@@ -1,25 +1,19 @@
 <?php
 //namespace Mini\Tests;
-use Mini\Model\user;
+//use Mini\Model\user;
 use PHPUnit\Framework\TestCase;
-use PHPUnit\DbUnit\TestCaseTrait;
+//use PHPUnit\DbUnit\TestCaseTrait;
 require_once('application\Model\user.php');
 //use user;
-class Logintest extends TestCase
+class Logintest extends  TestCase
 {
-
-    use TestCaseTrait;
-
-    /**
-     * @return PHPUnit\DbUnit\Database\Connection
-     */
-
     public function testUserConection()
     {
        // $userForm = 1007311489;
         //$passForm = 1567;
+        $user = new User($userForm, $passFom);
         $subject = user::userExists(1007311489,1567);
-        $this->assertEquals(true,$subject);
+        $this->assertTrue(true,$subject);
     }
 
     public function testHelloWorld()
