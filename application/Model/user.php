@@ -56,6 +56,10 @@ class user extends Model
         $query->execute(['user' => $user]);         
     }
     
+    public function answer()
+    {
+        return 5 * 3;
+    }
 
 
 }
