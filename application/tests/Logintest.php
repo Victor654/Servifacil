@@ -1,20 +1,12 @@
 <?php
-
-namespace Tests\Unit;
-
+namespace tests;
+use Mini\Model\user;
 use PHPUnit\Framework\TestCase;
-
-//use Mini\Model\prueba;
-
-require_once('application/Model/prueba.php');
-
-class loginTests extends TestCase
+//use PHPUnit\DbUnit\TestCaseTrait;
+require_once('application\Model\user.php');
+//use user;
+class Logintest extends  TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
 
     public function testUserConection()
     {
@@ -25,23 +17,16 @@ class loginTests extends TestCase
         $passForm = 1567;
         $this->assertEquals(1007311489, userExists());
         $this->assertEquals(1567, userExists());
-        
+        $this->assertTrue(true, userExists());
     }
 
 
-    public function testPruebaLlamandoFunsio()
+    public function testLife_the_universe_and_everything()
     {
-        $this->assertEquals(15, answer());
+        $user = new user();
+        $this->assertEquals(15,$user -> answer());
     }
 
-    public function testBasicTest()
-    {
-        $this->assertTrue(true);
-    }
-    public function testBasicTest1()
-    {
-        $this->assertFalse(false);
-    }
     public function testHelloWorld()
     {
         $this->assertEquals("hello world", "hello world");
@@ -51,4 +36,6 @@ class loginTests extends TestCase
     {
         $this->assertEquals("hello world", "hello world");
     }
+
 }
+?>
