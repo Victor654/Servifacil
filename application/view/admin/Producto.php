@@ -1,11 +1,11 @@
 <div class="container">
-  <h3 style="padding-left: 100px">PRODUCTO</h3>
+  <h3 style="padding-left: 100px" class="white-text center">PRODUCTO</h3>
 <div style="padding-left: 100px">
    <div class="row">
     <form method="post" action="<?php echo URL; ?>admin/Producto">
     <div class="input-field col s4">
       <input type="text" name="valor">
-        <label >Referencia, Producto o Tipo De Producto:</label>
+        <label >Referencia o Producto:</label>
       </div>
       <div class="input-field col s4">
             <button title="Botón para realizar una búsqueda" class="btn waves-effect waves-light btn-small light-blue" type="submit" name="btnBuscar">
@@ -16,7 +16,7 @@
             </a>
           </div>
           <div class="input-field col s2">
-            <a title="Botón para generar PDF" href="<?php echo URL; ?>admin/reporteProducto" target="_blank" class="btn waves-effect waves-light btn-small light-blue darken-4">
+            <a title="Botón para generar PDF" href="<?php echo URL; ?>admin/reporteProducto" target="_blank" class="btn waves-effect waves-light btn-small light-blue">
               <i class="material-icons">archive</i>
             </a>
           </div>
@@ -24,7 +24,6 @@
                  <a title="Despliegue para ver mas opciones" class='dropdown-trigger  btn-small waves-effect waves-light teal darken-1' href='#' data-target='dropdown'><i class="material-icons">keyboard_arrow_down</i></a>
         </li>
          <ul id='dropdown' class='dropdown-content'>
-          <li class="bold"></li>
           <li class="bold"><a title="Botón para agregar un producto" href="<?php echo URL; ?>admin/regProducto" class="waves-effect waves-teal">Registrar Producto</a></li>
           <li class="bold"><a title="Botón para agregar tpo de producto" href="<?php echo URL; ?>admin/regTipoProducto" class="waves-effect waves-teal">Registrar Tipo De Producto</a></li>
         </ul>
@@ -32,7 +31,7 @@
             </form>
           </div>          
        <table class="responsive-table striped">
-        <thead>
+        <thead class="white-text">
           <tr>
             <th>Referencia</th>
               <th>Producto</th>
@@ -51,10 +50,10 @@
                     <td><?php if (isset($Producto->Tipo_Producto)) echo htmlspecialchars($Producto->Tipo_Producto, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><a title="Botón para editar producto" class="btn-floating btn-large waves-effect waves-light blue" href="<?php echo URL . 'admin/editProducto/' . htmlspecialchars($Producto->Id_Producto, ENT_QUOTES, 'UTF-8'); ?>"><i class="material-icons">create</i></a></td>
 
-                    <td><a title="Botón para mostrar ficha técnica"class="btn modal-trigger indigo" onclick="mostrarProductos(<?php echo$Producto->Id_Producto ?>)"><i class="material-icons">format_align_justify</i></a></td>
+                    <td><a title="Botón para mostrar ficha técnica"class="btn modal-trigger indigo blue" onclick="mostrarProductos(<?php echo$Producto->Id_Producto ?>)"><i class="material-icons">format_align_justify</i></a></td>
 
                     <form method="GET" target="_blank" action="<?php echo URL; ?>admin/reporteFicha"><input type='hidden' name='producto' value="<?php if (isset($Producto->Id_Producto)) echo htmlspecialchars($Producto->Id_Producto, ENT_QUOTES, 'UTF-8'); ?>">
-                    <td> <button  title="Botón para generar pdf del producto" class="btn waves-effect waves-light btn-small" type="submit" name="btnBuscar">
+                    <td> <button  title="Botón para generar pdf del producto" class="btn waves-effect waves-light btn-small blue" type="submit" name="btnBuscar">
                     <i class="material-icons">archive</i>
                     </button></td>
                     </form>

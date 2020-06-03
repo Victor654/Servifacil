@@ -1,9 +1,9 @@
 <div class="container">
-  <h3 style="padding-left: 300px">Pieza</h3>
+  <h3 style="padding-left: 100px;" class="white-text center">PROCESOS</h3>
 <div class="right-align">
-   <a title="Botón para registar una pieza" href="<?php echo URL; ?>admin/regPieza" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
+   <a title="Botón para registar una pieza" href="<?php echo URL; ?>admin/regPieza"class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
 </div>
-<div style="padding-left: 300px">
+<div style="padding-left: 100px">
   <div class="row">
     <form method="post" action="<?php echo URL; ?>admin/Pieza">
     <div class="input-field col s4">
@@ -11,7 +11,7 @@
         <label >Id pieza o nombre:</label>
          </div>
          <div class="input-field col s4">
-            <button title="Botón para realizar una búsqueda" class="btn waves-effect waves-light" type="submit" name="btnBuscar">
+            <button title="Botón para realizar una búsqueda" class="btn waves-effect waves-light blue" type="submit" name="btnBuscar">
               <i class="material-icons">search</i>
             </button>
             <a title="Botón para reiniciar una búsqueda" href="<?php echo URL; ?>admin/Pieza" class="btn-floating btn-small waves-effect waves-light blue accent-2">
@@ -20,7 +20,7 @@
           </form>
          </div>
        <table class="responsive-table striped">
-        <thead>
+        <thead class="white-text">
           <tr>
             <th>Id</th>
               <th>Pieza</th>

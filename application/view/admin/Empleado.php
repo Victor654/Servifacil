@@ -1,5 +1,5 @@
 <div class="container">"
- 	<h3 style="padding-left: 100px;" class="white-text">DIRECTIVOS</h3>
+ 	<h3 style="padding-left: 100px;" class="white-text center">DIRECTIVOS</h3>
 <div class="right-align">
 	 <a title="Botón para registrar a un directivo" href="<?php echo URL; ?>admin/regEmpleado" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
 </div>
@@ -28,6 +28,7 @@
               <th>Correo</th>
               <th>Estado</th>
               <th>Cargo</th>
+              <th>Opción</th>
           </tr>
         </thead>
 

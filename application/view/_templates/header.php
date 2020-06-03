@@ -51,7 +51,7 @@ header('location: ' . URL . 'operario/menuO');
         </ul>
         <li class="bold"><a href="<?php echo URL; ?>admin/grafico" class="waves-effect waves-teal">Dashboard</a></li>
       <li class="bold"><a href="<?php echo URL; ?>admin/Cliente" class="waves-effect waves-teal">Clientes</a></li>
-      <li class="bold"><a href="<?php echo URL; ?>admin/Pieza" class="waves-effect waves-teal">Piezas</a></li>
+      <li class="bold"><a href="<?php echo URL; ?>admin/Pieza" class="waves-effect waves-teal">Procesos</a></li>
       <li class="bold"><a href="<?php echo URL; ?>admin/Producto" class="waves-effect waves-teal">Productos</a></li>
       <li class="bold"><a href="<?php echo URL; ?>admin/Op" class="waves-effect waves-teal">Realizar Venta</a></li>
         <li><a class='dropdown-trigger waves-effect waves-teal' href='#' data-target='dropdown2'>Tareas<i class="material-icons">keyboard_arrow_down</i></a></li>

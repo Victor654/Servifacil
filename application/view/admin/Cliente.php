@@ -1,5 +1,5 @@
 <div class="container">
-  <h3 style="padding-left: 100px" class="white-text">CLIENTES</h3>
+  <h3 style="padding-left: 100px" class="white-text center">CLIENTES</h3>
 <div class="right-align">
 	 <a title="Botón para agregar un cliente" href="<?php echo URL; ?>admin/regCliente" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
 </div>
@@ -30,6 +30,7 @@
                 <th>Dirección</th>
                 <th>Teléfono</th>
                 <th>Correo</th>
+                <th>Opción</th>
             </tr>
             </thead>
             <tbody>
