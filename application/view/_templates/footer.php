@@ -1,13 +1,13 @@
-        <footer class="page-footer grey darken-4">
+        <footer class="page-footer blue-grey lighten-5">
           <div class="container">
             <div class="row" style="padding-left: 100px">
               <div class="col l6 s12">
-                <h5 class="white-text">SERVIFACIL</h5>
+                <h5 class="black-text">SERVIFACIL</h5>
               </div>
             </div>
           </div>
           <div class="footer-copyright" style="padding-left: 100px">
-            <div class="container">
+            <div class="container black-text">
             SERVIFACIL
             </div>
           </div>

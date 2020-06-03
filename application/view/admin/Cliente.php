@@ -1,7 +1,7 @@
 <div class="container">
-  <h3 style="padding-left: 100px">CLIENTES</h3>
+  <h3 style="padding-left: 100px" class="white-text">CLIENTES</h3>
 <div class="right-align">
-	 <a title="Botón para agregar un cliente" href="<?php echo URL; ?>admin/regCliente" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
+	 <a title="Botón para agregar un cliente" href="<?php echo URL; ?>admin/regCliente" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
 </div>
 <div style="padding-left: 100px">
     <div class="row">
@@ -11,16 +11,16 @@
         <label >Id cliente o nombre: </label>
          </div>
          <div class="input-field col s4">
-            <button title="Botón para hacer una búsqueda" class="btn waves-effect waves-light" type="submit" name="btnBuscar">
+            <button title="Botón para hacer una búsqueda" class="btn waves-effect waves-light blue" type="submit" name="btnBuscar">
             <i class="material-icons">search</i>
             </button>
-            <a title="Botón para reiniciar búsqueda" href="<?php echo URL; ?>admin/Cliente" class="btn-floating btn-small waves-effect waves-light blue accent-2">
+            <a title="Botón para reiniciar búsqueda" href="<?php echo URL; ?>admin/Cliente" class="btn-floating btn-small waves-effect waves-light blue accent-2 blue">
               <i class="material-icons">replay</i>
             </a>         
          </div>
          </form>
        <table class="responsive-table striped">
-            <thead>
+            <thead class="white-text">
             <tr>
                 <th>Tipo Identificación</th>
                 <th>Identificación</th>

@@ -3,7 +3,7 @@
       <img class="responsive-img" style="width: 90px; height: 95px;" src="<?php echo URL; ?>/img/admin.png" />
       <div class="section"></div>
 
-      <h5 class="black-text">ADMINISTRADOR</h5>
+      <h5 class="white-text">ADMINISTRADOR</h5>
       <div class="section"></div>
 
       <div class="container">

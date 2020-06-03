@@ -23,10 +23,10 @@ header('location: ' . URL . 'operario/menuO');
   <title>SERVIFACIL</title>
 </head>
 <main style=" flex: 1 0 auto;">
-<body style=" display: flex;min-height: 100vh;flex-direction: column; background: #DCDCDC;">
-  <div class="navbar-fixed  grey darken-4">
+<body style=" display: flex;min-height: 100vh;flex-direction: column;" class ="grey darken-4">
+  <div class="navbar-fixed  blue-grey lighten-5">
     <nav>
-      <div class="nav-wrapper grey darken-4">
+      <div class="nav-wrapper blue-grey lighten-5">
        <a href="<?php echo URL;?>home/index ?>" class="brand-logo center"><img src="<?php echo URL; ?>/img/logo.png" width="270" height="60"></a>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 <div class="container">
-  <h3 style="padding-left: 100px">OPERARIO</h3>
+  <h3 style="padding-left: 100px" class="white-text">OPERARIO</h3>
 <div class="right-align">
 	 <a title="Botón para registar un operario" href="<?php echo URL; ?>admin/regOperario" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
 

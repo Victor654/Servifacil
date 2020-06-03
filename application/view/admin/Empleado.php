@@ -1,9 +1,9 @@
-<div class="container">
- 	<h3 style="padding-left: 300px">DIRECTIVOS</h3>
+<div class="container">"
+ 	<h3 style="padding-left: 100px;" class="white-text">DIRECTIVOS</h3>
 <div class="right-align">
-	 <a title="Botón para registrar a un directivo" href="<?php echo URL; ?>admin/regEmpleado" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
+	 <a title="Botón para registrar a un directivo" href="<?php echo URL; ?>admin/regEmpleado" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
 </div>
-<div style="padding-left: 300px">
+<div style="padding-left: 100px">
   <div class="row">
     <form method="post" action="<?php echo URL; ?>admin/Empleado">
     <div class="input-field col s4">
@@ -11,7 +11,7 @@
         <label >Id usuario o nombre: </label>
          </div>
          <div class="input-field col s4">
-            <button title="Botón para hacer una búsqueda" class="btn waves-effect waves-light" type="submit" name="btnBuscar">
+            <button title="Botón para hacer una búsqueda" class="btn waves-effect waves-light blue" type="submit" name="btnBuscar">
               <i class="material-icons">search</i>
             </button>
             <a title="Botón para reiniciar búsqueda" href="<?php echo URL; ?>admin/Empleado" class="btn-floating btn-small waves-effect waves-light blue accent-2">
@@ -21,7 +21,7 @@
          </div>
       </div>
        <table class="responsive-table striped">
-        <thead>
+        <thead class="white-text">
           <tr>
               <th>Identificación</th>
               <th>Nombre</th>

@@ -28,8 +28,8 @@ header('location: ' . URL . 'operario/menuO');
  
 </head>
 <main style=" flex: 1 0 auto;">
-<body style=" display: flex;min-height: 100vh;flex-direction: column; background: #DCDCDC;">
- <nav class="grey darken-4">
+<body style=" display: flex;min-height: 100vh;flex-direction: column;" class ="grey darken-4">
+ <nav class="blue-grey lighten-5">
     <div class="nav-wrapper">
       <img src="<?php echo URL; ?>img/logo.png" class="right" width="300px" height="65px">
     </div>
