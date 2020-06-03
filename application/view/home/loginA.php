@@ -1,9 +1,9 @@
     <br>
     <center>
-      <img class="responsive-img" style="width: 100px; height: 140px;" src="<?php echo URL; ?>/img/admin.png" />
+      <img class="responsive-img" style="width: 90px; height: 95px;" src="<?php echo URL; ?>/img/admin.png" />
       <div class="section"></div>
 
-      <h5 class="blue-text">ADMINISTRADOR</h5>
+      <h5 class="black-text">ADMINISTRADOR</h5>
       <div class="section"></div>
 
       <div class="container">
@@ -25,7 +25,7 @@
 
             <div class='row'>
               <div class='input-field col s12'>
-                <input class='validate' type='password' name='clave' id='password' />
+                <input class='validate' type='password' name='clave' id='password'  required onkeypress="return justNumbers(event);"/>
                 <label for='password'>Clave</label>
               </div>
             </div>
