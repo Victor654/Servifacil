@@ -29,8 +29,9 @@
         </ul>
             </div>
             </form>
-          </div>          
-       <table class="responsive-table striped">
+          </div>  
+          <div class="input-field col s8">        
+       <table class="responsive-table">
         <thead class="white-text">
           <tr>
             <th>Referencia</th>
@@ -41,7 +42,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="white-text">
           <?php foreach ($Producto as $Producto) { ?>
                 <tr>
                   <td><?php if (isset($Producto->Referencia)) echo htmlspecialchars($Producto->Referencia, ENT_QUOTES, 'UTF-8'); ?></td>
@@ -61,6 +62,7 @@
             <?php } ?>
         </tbody>
       </table>
+    </div>
   </div>
  </div>
 

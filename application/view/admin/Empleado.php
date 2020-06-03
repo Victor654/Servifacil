@@ -41,7 +41,7 @@
                     <td><?php if (isset($Usuario->Estado)) echo htmlspecialchars($Usuario->Estado, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><?php if (isset($Usuario->Cargo)) echo htmlspecialchars($Usuario->Cargo, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><a title="Botón para editar a un directivo" class="btn-floating btn-large waves-effect waves-light blue" id="tooltip" href="<?php echo URL . 'admin/editusuario/' . htmlspecialchars($Usuario->Id_Usuario, ENT_QUOTES, 'UTF-8'); ?>"><i class="material-icons">create</i></a></td>
-                    <td><a class="waves-effect waves-light btn lime accent-4" title="Botón para cambiar estado" href="<?php echo URL . 'admin/cambiarEstado/' . htmlspecialchars($Usuario->Id_Usuario, ENT_QUOTES, 'UTF-8').'/'. htmlspecialchars($Usuario->Id_Estado, ENT_QUOTES, 'UTF-8'); ?>">Estado</a></td>
+                    <td><a class="waves-effect waves-light btn  teal" title="Botón para cambiar estado" href="<?php echo URL . 'admin/cambiarEstado/' . htmlspecialchars($Usuario->Id_Usuario, ENT_QUOTES, 'UTF-8').'/'. htmlspecialchars($Usuario->Id_Estado, ENT_QUOTES, 'UTF-8'); ?>">Estado</a></td>
                 </tr>
             <?php } ?>
         </tbody>

@@ -41,7 +41,7 @@
                     <td><?php if (isset($Operario->Estado)) echo htmlspecialchars($Operario->Estado, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><h7>Operario</h7></td>
                     <td><a title="Botón para editar un operario" class="btn-floating btn-large waves-effect waves-light blue" href="<?php echo URL . 'admin/editoperario/' . htmlspecialchars($Operario->Id_Operario, ENT_QUOTES, 'UTF-8'); ?>"><i class="material-icons">create</i></a></td>
-                    <td><a title="Botón para cambiar estado" class="waves-effect waves-light btn lime accent-4" href="<?php echo URL . 'admin/cambiarEstado2/' . htmlspecialchars($Operario->Id_Operario, ENT_QUOTES, 'UTF-8').'/'. htmlspecialchars($Operario->Id_Estado, ENT_QUOTES, 'UTF-8'); ?>">Estado</a></td>
+                    <td><a title="Botón para cambiar estado" class="waves-effect waves-light btn teal" href="<?php echo URL . 'admin/cambiarEstado2/' . htmlspecialchars($Operario->Id_Operario, ENT_QUOTES, 'UTF-8').'/'. htmlspecialchars($Operario->Id_Estado, ENT_QUOTES, 'UTF-8'); ?>">Estado</a></td>
                 </tr>
             <?php } ?>
         </tbody>

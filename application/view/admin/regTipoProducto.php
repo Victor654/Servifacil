@@ -1,15 +1,15 @@
 <div class="container">
-    <h3 style="padding-left: 300px">Tipo De Producto</h3>
+    <h3 style="padding-left: 300px"  class="white-text">Tipo De Producto</h3>
   <div class="row" style="padding-left: 100px">
     <div class="input-field col s6">
     <table>
-        <thead>
+        <thead  class="white-text">
           <tr>
               <th>Tipo De Producto</th>
           </tr>
         </thead>
 
-        <tbody>
+        <tbody  class="white-text">
           <?php foreach ($TipoProducto as $TipoProducto) { ?>
                 <tr>
                   <td><?php if (isset($TipoProducto->Tipo_Producto)) echo htmlspecialchars($TipoProducto->Tipo_Producto, ENT_QUOTES, 'UTF-8'); ?></td>
@@ -21,7 +21,7 @@
         </table>
       </div>
       <div class="input-field col s6">
-    <h3>Registrar Tipo De Producto</h3>
+    <h3  class="white-text">Registrar Tipo De Producto</h3>
        <form method="post" action="<?php echo URL; ?>admin/addTipo">              
       <div class="row">
         <div class="input-field col s3">
@@ -34,12 +34,12 @@
           </div>
           <div class="input-field col s8">
           <table  id="detalle">
-            <thead>
+            <thead class="white-text">
               <tr>
                 <th>Tipo De Producto</th>
               </tr>
             </thead>
-              <tbody>
+              <tbody  class="white-text">
                 
               </tbody>
           </table>

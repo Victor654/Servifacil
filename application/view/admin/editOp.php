@@ -1,14 +1,14 @@
 <div class="container">
-    <h3 style="padding-left: 300px">Editar OP</h3>
+    <h3 style="padding-left: 300px" class="white-text">Editar OP</h3>
     <div class="container">
        <form class="col s12" method="post" action="<?php echo URL; ?>admin/updateOp">
       <div class="row">
         <div class="input-field col s3">
-          <input title="No se puede modificar" type="text" readonly  name="id" onkeypress="return justNumbers(event);" value="<?php echo htmlspecialchars($Op->Id_Orden_Produccion, ENT_QUOTES, 'UTF-8'); ?>" required>
-          <label for="first_name" >Número Orden</label>
+          <input title="No se puede modificar" class="white-text" type="text" readonly  name="id" onkeypress="return justNumbers(event);" value="<?php echo htmlspecialchars($Op->Id_Orden_Produccion, ENT_QUOTES, 'UTF-8'); ?>" required>
+          <label for="first_name" class="white-text">Número Orden</label>
         </div>
         <div class="input-field col s3">
-          <select title="Seleccione estado" name="estado"  class="browser-default" required>
+          <select title="Seleccione estado"  name="estado"  class="browser-default" required>
             <option value="" disabled selected>Estado: </option>
               <?php 
                 foreach ($EstadoOp as $value):?>
@@ -17,7 +17,7 @@
           </select>
          </div>
          <div class="input-field col s4">
-          <input title="seleccione fecha" name="fecha" type="text" placeholder="Fecha De Pedido" value="<?php echo htmlspecialchars($Op->Fecha_Pedido, ENT_QUOTES, 'UTF-8'); ?>" class="datepicker">
+          <input title="seleccione fecha" class="white-text" name="fecha" type="text" placeholder="Fecha De Pedido" value="<?php echo htmlspecialchars($Op->Fecha_Pedido, ENT_QUOTES, 'UTF-8'); ?>" class="datepicker">
         </div>
       </div>
 

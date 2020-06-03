@@ -2,7 +2,7 @@
 $producto=$_GET['producto'];
  ?>
 <div class="container">
-    <h3 class="blue-text" style="padding-left: 300px">Editar Ficha Tecnica</h3>
+    <h3 class="white-text" style="padding-left: 300px">Editar Ficha Tecnica</h3>
     <div class="container" style="padding-left: 100px">
     <form class="col s12" method="post" action="<?php echo URL; ?>admin/addProducto">
 
@@ -26,19 +26,19 @@ $producto=$_GET['producto'];
                <?php endforeach; ?>
              </select>  
              <br>          
-          <button class="btn waves-effect waves-light yellow" type="button" onclick="agregar_campos()">Agregar
+          <button class="btn waves-effect waves-light blue" type="button" onclick="agregar_campos()">Agregar
             </button>
          </div>
          <div class="input-field col s8">
           <table id="detalle">
-            <thead>
+            <thead class="white-text">
               <tr>
                 <th>Piezas</th>
                 <th>Fases</th>
                 <th>Opcion</th>
               </tr>
             </thead>
-              <tbody>
+              <tbody class="white-text">
                 
               </tbody>
           </table>
