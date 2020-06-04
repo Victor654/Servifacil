@@ -1,8 +1,8 @@
 <div class="container">
   <h3 style="padding-left: 100px" class="white-text center">PRODUCTO</h3>
-<div style="padding-left: 100px">
+  <div style="padding-left: 100px">
    <div class="row">
-    <form method="post" action="<?php echo URL; ?>admin/Producto">
+      <form method="post" action="<?php echo URL; ?>admin/Producto">
     <div class="input-field col s4">
       <input type="text" name="valor">
         <label >Referencia o Producto:</label>
@@ -51,10 +51,10 @@
                     <td><?php if (isset($Producto->Tipo_Producto)) echo htmlspecialchars($Producto->Tipo_Producto, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><a title="Botón para editar producto" class="btn-floating btn-large waves-effect waves-light blue" href="<?php echo URL . 'admin/editProducto/' . htmlspecialchars($Producto->Id_Producto, ENT_QUOTES, 'UTF-8'); ?>"><i class="material-icons">create</i></a></td>
 
-                    <td><a title="Botón para mostrar ficha técnica"class="btn modal-trigger indigo blue" onclick="mostrarProductos(<?php echo$Producto->Id_Producto ?>)"><i class="material-icons">format_align_justify</i></a></td>
+                    <td><a title="Botón para mostrar ficha técnica"class="btn modal-trigger indigo teal darken-3" onclick="mostrarProductos(<?php echo$Producto->Id_Producto ?>)"><i class="material-icons">format_align_justify</i></a></td>
 
                     <form method="GET" target="_blank" action="<?php echo URL; ?>admin/reporteFicha"><input type='hidden' name='producto' value="<?php if (isset($Producto->Id_Producto)) echo htmlspecialchars($Producto->Id_Producto, ENT_QUOTES, 'UTF-8'); ?>">
-                    <td> <button  title="Botón para generar pdf del producto" class="btn waves-effect waves-light btn-small blue" type="submit" name="btnBuscar">
+                    <td> <button  title="Botón para generar pdf del producto" class="btn waves-effect waves-light btn-small  teal" type="submit" name="btnBuscar">
                     <i class="material-icons">archive</i>
                     </button></td>
                     </form>

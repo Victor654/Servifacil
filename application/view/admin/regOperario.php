@@ -1,30 +1,30 @@
 <div class="container">
- <h3 class="blue-text" style="padding-left: 300px">Registrar Operario</h3>
+ <h3 class="white-text" style="padding-left: 300px">Registrar Operario</h3>
 
     <div class="container" style="padding-left: 100px">
     <form class="col s12" method="post" action="<?php echo URL; ?>admin/addOperario">
       <div class="row">
         <div class="input-field col s6">
-          <input title="Ingrese Nombre" type="text" required name="nombre">
-          <label for="first_name">Nombre</label>
+          <input class="white-text" title="Ingrese Nombre" type="text" required name="nombre">
+          <label class="white-text" for="first_name">Nombre</label>
         </div>
       </div>
       <div class="row">
             <div class="input-field col s6">
-           <input title="Ingrese Identificación" name="id" type="text"required onkeypress="return justNumbers(event);" required>
-          <label >Identificación</label>
+           <input class="white-text" title="Ingrese Identificación" name="id" type="text"required onkeypress="return justNumbers(event);" required>
+          <label class="white-text">Identificación</label>
          </div>
       </div>
     <div class="row">
       <div class="input-field col s6">
-        <input title="Ingrese correo" id="email" type="email" name="email" class="validate">
-          <label for="email">Email</label>
-          <span class="helper-text" data-error="error" data-success="correcto">Debe conener un @</span>
+        <input class="white-text" title="Ingrese correo" id="email" type="email" name="email" class="validate">
+          <label class="white-text" for="email">Email</label>
+          <span class="white-text" class="helper-text" data-error="error" data-success="correcto">Debe conener un @</span>
       </div>
     </div>
 <div class="row">
   <div class="input-field col s6">
-    <select title="Seleccione una opción" required name="id_estado">
+    <select title="Seleccione una opción" class="browser-default" required name="id_estado">
       <option value="" disabled selected>Estado:</option>
       <option name="id_estado" value="1">Activo</option>
       <option name="id_estado" value="2">Inactivo</option>
@@ -35,7 +35,7 @@
 
       <div class="row">
               
-   <button title="Botón para guardar" class="btn waves-effect waves-light" type="submit" name="submit_addOperario">Guardar
+   <button title="Botón para guardar" class="btn waves-effect waves-light blue" type="submit" name="submit_addOperario">Guardar
     <i class="material-icons right">send</i>
   </button>
         

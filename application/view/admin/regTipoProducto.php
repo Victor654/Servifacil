@@ -28,7 +28,7 @@
            <input title="Agregar Tipo De Producto" type="text" id="tipo_producto" placeholder="Tipo De Producto" required>
         </div>
         <div class="input-field col s3">
-           <button title="Botón para Agregar campo" class="btn waves-effect green accent-4" type="button" onclick="agregar_campos5()">Agregar
+           <button title="Botón para Agregar campo" class="btn waves-effect  teal" type="button" onclick="agregar_campos5()">Agregar
             </button>
         </div>
           </div>

@@ -1,31 +1,31 @@
 <div class="container">
-    <h3 style="padding-left: 300px">Registrar Pieza</h3>
-    <div class="container">
+    <h3 style="padding-left: 300px" class="white-text">Registrar Proceso</h3>
+    <div class="container" >
        <form method="post" action="<?php echo URL; ?>admin/addPieza">              
       <div class="row">
         <div class="input-field col s3">
-           <input title="Agregar Pieza" type="text" id="Pieza" placeholder="Pieza" required>
+           <input title="Agregar Pieza" type="text" id="Pieza" placeholder="Pieza" required class="white-text">
         </div>
         <div class="input-field col s3">
-           <button title="Botón para Agregar campo" class="btn waves-effect green accent-4" type="button" onclick="agregar_campos4()">Agregar
+           <button title="Botón para Agregar campo" class="btn waves-effect  teal" type="button" onclick="agregar_campos4()">Agregar
             </button>
         </div>
           </div>
           <div class="input-field col s8">
           <table  id="detalle">
-            <thead>
+            <thead class="white-text">
               <tr>
-                <th>Piezas</th>
+                <th>Proceso</th>
                 <th>Opción</th>
               </tr>
             </thead>
-              <tbody>
+              <tbody class="white-text">
                 
               </tbody>
           </table>
          </div>
       <div class="row">              
-        <button title="Botón Guardar" class="btn waves-effect waves-light" type="submit" name="submit_addPieza">Guardar
+        <button title="Botón Guardar" class="btn waves-effect waves-light blue" type="submit" name="submit_addPieza">Guardar
         <i class="material-icons right">send</i>
         </button>
       </div>

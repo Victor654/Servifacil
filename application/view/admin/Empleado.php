@@ -1,26 +1,27 @@
 <div class="container">"
  	<h3 style="padding-left: 100px;" class="white-text center">DIRECTIVOS</h3>
-<div class="right-align">
+  <div class="right-align">
 	 <a title="Botón para registrar a un directivo" href="<?php echo URL; ?>admin/regEmpleado" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
-</div>
-<div style="padding-left: 100px">
-  <div class="row">
-    <form method="post" action="<?php echo URL; ?>admin/Empleado">
-    <div class="input-field col s4">
-      <input type="text" name="valor">
-        <label >Id usuario o nombre: </label>
-         </div>
-         <div class="input-field col s4">
-            <button title="Botón para hacer una búsqueda" class="btn waves-effect waves-light blue" type="submit" name="btnBuscar">
-              <i class="material-icons">search</i>
-            </button>
-            <a title="Botón para reiniciar búsqueda" href="<?php echo URL; ?>admin/Empleado" class="btn-floating btn-small waves-effect waves-light blue accent-2">
-              <i class="material-icons">replay</i>
-            </a>
-          </form>
-         </div>
-      </div>
-       <table class="responsive-table striped">
+  </div>
+  <div style="padding-left: 100px">
+    <div class="row">
+      <form method="post" action="<?php echo URL; ?>admin/Empleado">
+        <div class="input-field col s4">
+          <input type="text" name="valor">
+          <label >Id usuario o nombre: </label>
+        </div>
+        <div class="input-field col s4">
+          <button title="Botón para hacer una búsqueda" class="btn waves-effect waves-light blue" type="submit" name="btnBuscar">
+            <i class="material-icons">search</i>
+          </button>
+          <a title="Botón para reiniciar búsqueda" href="<?php echo URL; ?>admin/Empleado" class="btn-floating btn-small waves-effect waves-light blue accent-2">
+            <i class="material-icons">replay</i>
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="input-field col s8"> 
+       <table class="responsive-table">
         <thead class="white-text">
           <tr>
               <th>Identificación</th>
@@ -32,7 +33,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="white-text">
           <?php foreach ($Usuario as $Usuario) { ?>
                 <tr>
                     <td><?php if (isset($Usuario->Id_Usuario)) echo htmlspecialchars($Usuario->Id_Usuario, ENT_QUOTES, 'UTF-8'); ?></td>
@@ -46,6 +47,7 @@
             <?php } ?>
         </tbody>
       </table>
+    </div>
   </div>
 </div>
 </main>

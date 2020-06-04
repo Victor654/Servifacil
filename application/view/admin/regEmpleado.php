@@ -1,11 +1,11 @@
 <div class="container">
- <h3 class="blue-text" style="padding-left: 300px">Registrar Empleado</h3>
+ <h3 class="white-text" style="padding-left: 300px">Registrar Empleado</h3>
 
     <div class="container" style="padding-left: 100px">
     <form class="col s12" method="post" action="<?php echo URL; ?>admin/addUsuario">
 <div class="row">
            <div class="input-field col s6">
-            <select title="Seleccione cargo" required name="id_cargo" required>
+            <select title="Seleccione cargo" class="browser-default" required name="id_cargo" required>
               <option value="" disabled selected>Cargo:</option>
               <?php 
               foreach ($Cargo as $value):?>
@@ -17,27 +17,27 @@
 </div>
       <div class="row">
         <div class="input-field col s6">
-          <input title="Ingrese Nombre" type="text" required name="nombre">
-          <label for="first_name">Nombre</label>
+          <input class="white-text" title="Ingrese Nombre" type="text" required name="nombre">
+          <label for="first_name" class="white-text">Nombre</label>
         </div>
       </div>
       <div class="row">
             <div class="input-field col s6">
-           <input title="Ingrese Identificación" name="id" type="text"required onkeypress="return justNumbers(event);" required>
-          <label >Identificación</label>
+           <input class="white-text" title="Ingrese Identificación" name="id" type="text"required onkeypress="return justNumbers(event);" required>
+          <label class="white-text">Identificación</label>
          </div>
       </div>
                 <div class="row">
             <div class="input-field col s6">
-           <input title="Ingrese clave" type="password" id="clave" name="clave">
-          <label >Clave</label>
+           <input class="white-text" title="Ingrese clave" type="password" id="clave" name="clave">
+          <label class="white-text">Clave</label>
          </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input title="Ingrese Correo" id="email" type="email" name="email" class="validate">
-          <label for="email">Correo</label>
-          <span class="helper-text" data-error="error" data-success="correcto">Debe conetener un @</span>
+          <input class="white-text" title="Ingrese Correo" id="email" type="email" name="email" class="validate">
+          <label for="email" class="white-text">Correo</label>
+          <span class="white-text" class="helper-text" data-error="error" data-success="correcto">Debe conetener un @</span>
         </div>
       </div>
 <div class="row">
@@ -56,7 +56,7 @@
 
       <div class="row">
               
-   <button title="Botón para enviar" class="btn waves-effect waves-light" type="submit" name="submit_addUsuario">Guardar
+   <button title="Botón para enviar" class="btn waves-effect waves-light blue" type="submit" name="submit_addUsuario">Guardar
     <i class="material-icons right">send</i>
   </button>
         
