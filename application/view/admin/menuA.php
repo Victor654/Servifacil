@@ -2,7 +2,7 @@
 <h3  class="white-text">Bienvenido, <?php if (isset($Usuario->Nombre)) echo htmlspecialchars($Usuario->Nombre, ENT_QUOTES, 'UTF-8'); ?></h3>
 <div class="row">
 	<div class="input-field col"></div>
-  <div class="input-field col s6"><div class="blue-grey lighten-4" id="calendario"></div></div>
+  <div class="input-field col s6"><div class="blue-grey lighten-5" id="calendario"></div></div>
   <div class="input-field col">
   <div class="input-field col">
   <h3  class="white-text">Guía de colores</h3>
