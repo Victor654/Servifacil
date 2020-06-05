@@ -49,7 +49,7 @@ header('location: ' . URL . 'operario/menuO');
           <li class="bold"><a href="<?php echo URL; ?>admin/Empleado" class="waves-effect waves-teal">Directivos</a></li>
           <li class="bold"><a href="<?php echo URL; ?>admin/Operario" class="waves-effect waves-teal">Operarios</a></li>
         </ul>
-        <li class="bold"><a href="<?php echo URL; ?>admin/grafico" class="waves-effect waves-teal">Dashboard</a></li>
+        <!--<li class="bold"><a href="<?php echo URL; ?>admin/grafico" class="waves-effect waves-teal">Dashboard</a></li>-->
       <li class="bold"><a href="<?php echo URL; ?>admin/Cliente" class="waves-effect waves-teal">Clientes</a></li>
       <li class="bold"><a href="<?php echo URL; ?>admin/Pieza" class="waves-effect waves-teal">Procesos</a></li>
       <li class="bold"><a href="<?php echo URL; ?>admin/Producto" class="waves-effect waves-teal">Productos</a></li>

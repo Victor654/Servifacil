@@ -809,12 +809,9 @@ class AdminController
     public function grafico()
     {
         $userSession = new user_session();
-        
-        $EstadoOp = new EstadoOp;
-        $EstadoOp = $EstadoOp->getEstadoOp();
-        
+         
         require APP . 'view/_templates/header.php';
-        require APP . 'view/grafico/grafico.php';
+        require APP . 'view/admin/grafico.php';
         require APP . 'view/_templates/footer.php';
     }
 

@@ -21,12 +21,9 @@
             </a>
           </div>
           <div class="input-field col s2">
-                 <a title="Despliegue para ver mas opciones" class='dropdown-trigger  btn-small waves-effect waves-light teal darken-1' href='#' data-target='dropdown'><i class="material-icons">keyboard_arrow_down</i></a>
         </li>
-         <ul id='dropdown' class='dropdown-content'>
-          <li class="bold"><a title="Botón para agregar un producto" href="<?php echo URL; ?>admin/regProducto" class="waves-effect waves-teal">Registrar Producto</a></li>
-          <li class="bold"><a title="Botón para agregar tpo de producto" href="<?php echo URL; ?>admin/regTipoProducto" class="waves-effect waves-teal">Registrar Tipo De Producto</a></li>
-        </ul>
+          <a title="Botón para agregar un producto" href="<?php echo URL; ?>admin/regProducto" class="btn modal-trigger indigo teal darken-3" name="producto"><i class="material-icons">assignment</i></a>
+          <a title="Botón para agregar tipo de producto" href="<?php echo URL; ?>admin/regTipoProducto" class="btn modal-trigger indigo teal darken-4" name="tipo_producto"><i class="material-icons">playlist_add</i></a>
             </div>
             </form>
           </div>  
