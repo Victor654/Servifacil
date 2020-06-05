@@ -1,3 +1,4 @@
+    <br><br>
     <div class="container" >
       <h3 class="blue-text">Bienvenido, <?php if (isset($Usuario->Nombre)) echo htmlspecialchars($Usuario->Nombre, ENT_QUOTES, 'UTF-8'); ?></h3>
       <div class="row">
@@ -38,7 +39,7 @@
       <h4>Tareas Pendientes</h4>
       <form method="post" action="<?php echo URL; ?>operario/cambiarEstadoTarea">
       <table>
-            <thead>
+            <thead class="white-text">
               <tr>
                 <th>Op</th>
                 <th>Producto</th>
@@ -47,7 +48,7 @@
                 <th>Estado</th>
 
               </tr>
-            </thead>
+            </thead class="white-text">
               <tbody id="contenedor_tarea">
                 
               </tbody>
@@ -63,6 +64,7 @@
     </form>
   </div>
 </div>
-
+</div>
+</main>
 
       
