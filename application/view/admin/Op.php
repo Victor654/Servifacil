@@ -19,7 +19,7 @@
       <form method="GET" action="<?php echo URL; ?>admin/reporteGeneral" autocomplete="off">
         <input type="hidden" target="_blank" name="valor2" id="reporte" >
         <div class="input-field col s5">
-          <button title="Botón para generar reporte" target="_blank" class="btn waves-effect waves-light btn-small light-blue" type="submit">
+          <button title="Botón para generar reporte" target="_blank" class="btn waves-effect waves-light light-blue" type="submit">
             <i class="material-icons">picture_as_pdf</i>
           </button>
         </div>
