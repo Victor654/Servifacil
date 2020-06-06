@@ -2,7 +2,7 @@
 <h3  class="white-text">Bienvenido, <?php if (isset($Usuario->Nombre)) echo htmlspecialchars($Usuario->Nombre, ENT_QUOTES, 'UTF-8'); ?></h3>
 <div class="row">
 <div class="right-align">
-   <a title="Botón para ver los graficos" href="<?php echo URL; ?>admin/grafico"class="btn-floating waves-effect waves-light blue"><i class="material-icons">poll</i></a>
+   <a title="Botón para ver el Dashboard" href="<?php echo URL; ?>admin/grafico"class="btn-floating waves-effect waves-light blue"><i class="material-icons">poll</i></a>
   </div>
 	<div class="input-field col"></div>
   <div class="input-field col s6"><div class="blue-grey lighten-5" id="calendario"></div></div>

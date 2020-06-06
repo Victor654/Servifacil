@@ -809,8 +809,9 @@ class AdminController
     public function grafico()
     {
         $userSession = new user_session();
-         
+        
         require APP . 'view/admin/graficos/grafico.php';
+        
     }
 
 }
