@@ -20,7 +20,7 @@
         <input type="hidden" target="_blank" name="valor2" id="reporte" >
         <div class="input-field col s5">
           <button title="Botón para generar reporte" target="_blank" class="btn waves-effect waves-light btn-small light-blue" type="submit">
-            <i class="material-icons">get_app</i>
+            <i class="material-icons">picture_as_pdf</i>
           </button>
         </div>
         <div class="input-field col s2">

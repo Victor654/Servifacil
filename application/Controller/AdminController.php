@@ -811,7 +811,7 @@ class AdminController
         $userSession = new user_session();
          
         require APP . 'view/_templates/header.php';
-        require APP . 'view/admin/grafico.php';
+        require APP . 'view/admin/graficos/grafico.php';
         require APP . 'view/_templates/footer.php';
     }
 
